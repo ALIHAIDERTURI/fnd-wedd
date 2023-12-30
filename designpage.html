@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>design page</title>
+  <!-- bootstrap 5.3 css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- swiper css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- font-awesome -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+</head>
+
+<body>
+  <!-- navbar -->
+
+  <nav class="Navbar mb-5">
+    <div class="container-fluid d-flex align-items-center">
+      <a href="#" class="navbar-brand">
+        <img class="logo" src="./assets/images/wlogo.png" alt="logo" />
+      </a>
+      <div class="navs w-100 d-flex  justify-content-center ">
+        <ul class="navbar-nav navmenu d-flex flex-row ">
+          <li class="nav-item mx-2 itemBefor">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+        </ul>
+      </div>
+      </form>
+    </div>
+  </nav>
+  <!-- navbar end -->
+
+  <!-- logged in page start -->
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row bgaft position-relative">
+        <div class="col-md-4  my-2">
+             <img class="w-100 h-100" src="./assets/images/himg.png" alt="">
+             
+        </div>
+        <div class="col-md-8 my-2 pt-4 position-relative">
+         <p class="heading3 text-start   ">Your Dream Wedding Website</p>
+         <p class="paraSub3 text-start">Sign In To Craft Your Special Wedding Website with WOSOM: <br> Personalize, Customize, and Set It Up in Minutes!</p>
+
+         <div class="d-flex justify-content-start align-items-center">
+           <button onclick="createRipple(event)"
+           class="btn getBtn d-flex align-items-center justify-content-center text-uppercase ripple-btn mt-4 d-block mx-1 px-5" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+           
+           SIGN IN
+         </button>
+         <button onclick="createRipple(event)"
+         class="btn getBtn d-flex align-items-center justify-content-center text-uppercase ripple-btn mt-4 d-block mx-1 px-5" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">
+         
+         SIGN UP
+       </button>   
+         </div>
+         <div class="row my-2 absRow">
+           <div class="col-md-4 my-2">
+             <div>
+               <img class="w-75" src="./assets/images/rp1.png" alt="">
+             </div>
+           </div>
+           <div class="col-md-4 my-2">
+             <div>
+               <img class="w-75" src="./assets/images/rp2.png" alt="">
+             </div>
+           </div>
+           <div class="col-md-4 my-2">
+             <div>
+               <img class="w-75" src="./assets/images/rp3.png" alt="">
+             </div>
+           </div>
+         </div>
+     </div>
+     </div>
+
+
+  </div>
+</div>
+<!-- modals  -->
+
+<!-- sign in modal -->
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content py-2 px-md-5 wosModal">
+      <div class="p-2 d-flex justify-content-end">
+      
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body py-5">
+         <p class="mh1 text-center">Sign In</p>
+         <div class="mt-4">
+           <form class="signIn form">
+              <div class="inputs">
+                <input type="email" class="wosInp form-control mb-2" placeholder="Email Address">
+                <input type="password" class="wosInp form-control mb-2" placeholder="password">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="check d-flex align-items-center">
+                    <input type="checkbox" class="form-check"  id="rcheck">
+                    <label class="mp3 ms-1" for="rcheck">Remember my account</label>
+                  </div>
+                  <a href="#" class="mp3 nav-link">Forgot Password</a>
+                </div>
+
+              </div>
+              <button onclick="createRipple(event)"
+              class="btn getBtn d-flex align-items-center justify-content-center text-uppercase ripple-btn mt-4 d-block mx-auto px-5">
+              
+              SIGN IN
+            </button>
+            <div class="mt-2">
+              <p class="d-flex justify-content-center align-items-center mp3 ">
+                NOT A MEMBER?<span class="mp4"><a href="#" class="nav-link">SIGN UP</a></span>
+              </p>
+            </div>
+           </form>
+         
+       
+         </div>
+      </div>
+      <div class="my-4 p-2">
+        <img class="d-block mx-auto img-fluid" src="./assets//images/Line4.png" alt="">
+       <p class="mp5   text-center my-5">sign in with</p>
+          <div class="d-flex justify-content-around   align-items-center w-100   brndImg" >
+            <a href="#"> <img src="./assets/images/ficon.png" alt=""></a>
+            <a href="#"> <img src="./assets/images/gicon.png" alt=""></a>
+            <a href="#"> <img src="./assets/images/gmicon.png" alt=""></a>
+          </div>
+       
+      </div>
+    </div>
+  </div>
+</div>
+<!-- sign in modal end -->
+
+<!-- sign up modal -->
+<div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content py-2 px-md-5 wosModal">
+      <div class="p-2 d-flex justify-content-end">
+      
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body py-5">
+         <p class="mh1 text-center">Sign Up</p>
+         <div class="mt-4">
+           <form class="signIn form">
+              <div class="inputs">
+                <p class="ip1">YOUR NAME</p>
+               <div class="my-2 d-flex justify-content-between">
+                <input type="email" class="wosInp form-control mb-2 me-2" placeholder="Email Address">
+                <input type="password" class="wosInp form-control mb-2 ms-2" placeholder="password">
+               </div>
+               <p class="ip1">YOUR PARTNER'S NAME</p>
+               <div class="my-2 d-flex justify-content-between">
+                <input type="text" class="wosInp form-control mb-2 me-2" placeholder="First Name">
+                <input type="text" class="wosInp form-control mb-2 ms-2" placeholder="Last Name">
+               </div>
+               <div class="my-2">
+                <input type="text" class="wosInp form-control mb-2" placeholder="Email Address">
+               </div>
+               <div class="my-2">
+                <input type="text" class="wosInp form-control mb-2" placeholder="Password">
+               </div>
+                
+
+              </div>
+              <button onclick="createRipple(event)"
+              class="btn getBtn d-flex align-items-center justify-content-center text-uppercase ripple-btn mt-4 d-block mx-auto px-5">
+              
+              SIGN IN
+            </button>
+            <div class="mt-2">
+              <p class="d-flex justify-content-center align-items-center mp3 ">
+                ALREADY A MEMBER?<span class="mp4"><a href="#" class="nav-link">SIGN IN </a></span>
+              </p>
+            </div>
+           </form>
+         
+       
+         </div>
+      </div>
+      <div class="my-4 p-2">
+        <img class="d-block mx-auto img-fluid" src="./assets//images/Line4.png" alt="">
+       <p class="mp5   text-center my-5">sign Up with</p>
+          <div class="d-flex justify-content-around   align-items-center w-100   brndImg" >
+            <a href="#"> <img src="./assets/images/ficon.png" alt=""></a>
+            <a href="#"> <img src="./assets/images/gicon.png" alt=""></a>
+            <a href="#"> <img src="./assets/images/gmicon.png" alt=""></a>
+          </div>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- sign up modals end -->
+
+<!-- popular wedding template portion start---------- -->
+<section class="my-5">
+    <div class="container">
+        <div class="d-flex justify-content-center horz-line ">
+            <img class=" px-5   " src="./assets/images/Line 1.png" alt="">
+        </div>
+        <div class="templet-tittle text-center text-dark my-5 ">
+            <h3 class="heading3 fw-bold">wosom’s Popular wedding template</h3>
+            <small class="paraSub3">Our Wedding Collections lorem ispum  minim veniam, quis nostrud</small>
+        </div>
+        <div class="row">
+         
+            <div class="col-md-4 mt-3 mt-md-0">
+                <a href="#">
+                    <div class=" w-100  rounded-3   pt-2  border border-1 d-flex flex-column align-items-center  ">
+                      <img class="w-100 px-2   " src="./assets/images/Templates-card-0.png" alt="">
+                      <p class="pt-2 text-uppercase  tp1">Earthy Flora</p>
+                  </div>
+                  </a>
+            </div>
+            <div class="col-md-4 mt-3 mt-md-0">
+                <a href="#">
+                    <div class=" w-100  rounded-3   pt-2  border border-1 d-flex flex-column align-items-center  ">
+                      <img class="w-100 px-2   " src="./assets/images/Templates-card-0.png" alt="">
+                      <p class="pt-2 text-uppercase  tp1">Earthy Flora</p>
+                  </div>
+                  </a>
+            </div>
+            <div class="col-md-4 mt-3 mt-md-0">
+                <a href="#">
+                    <div class=" w-100  rounded-3   pt-2  border border-1 d-flex flex-column align-items-center  ">
+                      <img class="w-100 px-2   " src="./assets/images/Templates-card-0.png" alt="">
+                      <p class="pt-2 text-uppercase  tp1">Earthy Flora</p>
+                  </div>
+                  </a>
+            </div>
+         
+        </div>
+
+<div class="d-flex justify-content-center align-items-center">
+    <a href="#" class="text-decoration-none">
+        <button onclick="createRipple(event)"
+       class="btn getBtn d-flex align-items-center justify-content-center text-uppercase ripple-btn mt-4 d-block mx-auto px-5 z-1" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">
+       view More <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.5 11H17.2269L11.862 5.63844L13.2758 4.22379L20.349 11.2927L21.0568 12L20.349 12.7073L13.2758 19.7762L11.862 18.3616L17.2269 13H5.5V11Z" fill="white"/>
+          </svg>
+       </span>
+     </button>
+     </a>
+</div>
+    </div>
+</section>
+<!-- popular wedding template portion end---------- -->
+
+<!-- easy share section start ------------------ -->
+<section>
+    <div class="container">
+        <div class="d-flex justify-content-center horz-line ">
+            <img class=" px-5   " src="./assets/images/Line 1.png" alt="">
+        </div>
+        <div class="row my-5">
+            <div class="col-md-2 my-5 ">
+                <p class="easy text-center pt-5">Easy</p>
+            </div>
+            <div class="col-md-10 my-5">
+           <p class="pt-4 weding">
+            Create Your Wedding Website and Keep the Celebration Going. Once Your Gift List and Guest List Are On Your Site, You're Set for What's Next.
+             </p>
+             <a href="#" class="shareWeb">Share Your Website</a>
+            </div>
+            <div class="col-md-10 my-5">
+           <p class="pt-4 weding">
+            Your wedding website simplifies everything for your guests – from RSVPs to menu choices, accommodations, and real-time updates.
+             </p>
+             <a href="#" class="shareWeb">Share Your Website</a>
+            </div>
+            <div class="col-md-2 my-5">
+                <p class="easy2 text-center pt-5">Share </p>
+            </div>
+            <div class="col-md-2 my-5 ">
+                <p class="easy text-center pt-5">Design</p>
+            </div>
+            <div class="col-md-10 my-5">
+           <p class="pt-4 weding">
+            Craft a Truly Unique Wedding Website with a design that reflects your wedding style. Add photos and sprinkle in those exciting wedding details!
+             </p>
+             <a href="#" class="shareWeb">Personalize Your Site</a>
+            </div>
+        </div>
+
+        <div class="row my-5 px-lg-5 d-flex justify-content-center">
+          <div class="col-md-1 d-none d-lg-block"></div>
+          <div class="col-md-4 col-lg-3 my-2">
+            <div class="card wosCard px-2 py-5">
+              <img class="d-block mx-auto" src="./assets/images/cimg1.png" alt="" width="50px">
+              <p class="my-2 chead">wedding vendors</p>
+              <p class="my-2 paraSub2">Discover Top Tier Wedding vendors are near you</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3 my-2">
+            <div class="card wosCard px-2 py-5">
+              <img class="d-block mx-auto" src="./assets/images/cimg3.png" alt="" width="50px">
+              <p class="my-2 chead">Wedding webSITE</p>
+              <p class="my-2 paraSub2">Create Your Custom Wedding Website totally FREE</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3 my-2">
+            <div class="card wosCard px-2 py-5">
+              <img class="d-block mx-auto" src="./assets/images/cimg2.png" alt="" width="50px">
+              <p class="my-2 chead">planning tools</p>
+              <p class="my-2 paraSub2">Streamline your Wedding Planning with Wosom</p>
+            </div>
+          </div>
+          <div class="col-md-1 d-none d-lg-block"></div>
+        </div>
+
+    </div>
+</section>
+<!-- easy share section end ------------------ -->
+ 
+  <!-- footer start -->
+  <div class="container-fluid footer ">
+    <div class="container ">
+      <div class="d-flex justify-content-between flex-wrap ">
+        <!-- first -->
+        <div class="sub mt-3 p-2 ">
+          <h4 class="fhead">NAVIGATION</h3>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">Sign up for Free</a>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">My Profile</a>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">Task List</a>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">Business Listing</a>
+        </div>
+        <!-- 2nd  -->
+        <div class="sub mt-3 p-2 ">
+          <h4 class="fhead">SUPPORT CENTER</h3>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">My Account</a>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">Professional</a>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">Account</a>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">Privacy & Terms</a>
+        </div>
+        <!-- 3rd -->
+        <div class="sub mt-3 p-2 ">
+          <h4 class="fhead">FOR BUSINESS</h3>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">For Listing</a>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">Step into The</a>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">Spotlight</a>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">Plan & Pricing</a>
+        </div>
+        <!-- 4th -->
+        <div class="sub mt-3 p-2 ">
+          <h4 class="fhead">ABOUT WOSOM</h3>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">The Team</a>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">Job Opportunities</a>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">Wedding day
+              advisor</a>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">Leadership with a
+              vision </a>
+        </div>
+        <!-- 5th -->
+        <div class="sub mt-3 p-2 me-md-3 me-lg-0 ">
+          <h4 class="fhead">TALK TO US</h3>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">supportwosom.com</a>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">+35799256256</a>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">Contact Us</a>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">Facebook</a>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">Linkedin</a>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">Twitter</a>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center w-100 horz-line">
+        <img class="px-5 my-4" src="./assets/images/Line 1.png" alt="" />
+      </div>
+      <div class="below-line d-flex justify-content-between  mt-4 flex-wrap mx-5 pb-5 align-items-center ">
+        <!-- logo here -->
+        <div class="b-sub flogo"><img src="/assets/images/wosom-logo-black.png.png" alt=""></div>
+        <!-- copy right -->
+        <div class="b-sub rights my-lg-0 my-3 ">© wosom . All Rights Reserved.</div>
+        <!-- icons here -->
+        <div class="b-sub ficons d-flex gap-3 align-items-center  ">
+          <div class="icondiv d-flex  justify-content-center align-items-center my-md-0 my-3   "><i
+              class="fa-brands fa-facebook-f fa-l"></i></div>
+          <div class="icondiv d-flex  justify-content-center align-items-center my-md-0 my-3   "><i
+              class="fa-brands fa-linkedin-in fa-l"></i></div>
+          <div class="icondiv d-flex  justify-content-center align-items-center my-md-0 my-3   "><i
+              class="fa-brands fa-twitter fa-l"></i></div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</div>
+<div class="d-flex w-100 flex-wrap">
+  <img class="footer-pic" src="./assets/images/footer-one.png" alt="" />
+  <img class="footer-pic" src="./assets/images/footer-two.png" alt="" />
+  <img class="footer-pic" src="./assets/images/footer-four.png" alt="" />
+  <img class="footer-pic" src="./assets/images/footer-five.png" alt="" />
+  <img class="footer-pic" src="./assets/images/footer-six.png" alt="" />
+  <img class="footer-pic" src="./assets/images/footer-seven.png" alt="" />
+  <img class="footer-pic" src="./assets/images/footer-eight.png" alt="" />
+  <img class="footer-pic" src="./assets/images/footer-nine.png" alt="" />
+  <img class="footer-pic" src="./assets/images/footer-ten.png" alt="" />
+</div>
+</div>
+  <!-- footer end -->
+
+  <!-- Ripple js  -->
+  <script>
+    function createRipple(event) {
+      const button = event.currentTarget;
+      const ripple = document.createElement("span");
+      const rect = button.getBoundingClientRect();
+      const size = Math.max(rect.width, rect.height);
+      const x = event.clientX - rect.left - size / 2;
+      const y = event.clientY - rect.top - size / 2;
+
+      ripple.style.width = ripple.style.height = `${size}px`;
+      ripple.style.left = `${x}px`;
+      ripple.style.top = `${y}px`;
+
+      ripple.classList.add("ripple");
+
+      button.appendChild(ripple);
+
+      setTimeout(() => {
+        ripple.remove();
+      }, 600);
+    }
+  </script>
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!-- swiper js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      //  pagination: {
+      //    el: ".swiper-pagination",
+      //    clickable: false,
+      //  },
+      breakpoints: {
+        "@0.00": {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        "@0.75": {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        "@1.00": {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        "@1.50": {
+          slidesPerView: 4,
+          spaceBetween: 50,
+        },
+      },
+    });
+  </script>
+
+
+</body>
+
+</html>

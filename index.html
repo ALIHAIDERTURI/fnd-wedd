@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap demo</title>
+  <!-- bootstrap 5.3 css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <!-- custom css -->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- swiper css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- font-awesome -->
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
+</head>
+<style>
+  .swiper-container {
+    width: 80%;
+    margin: auto;
+  }
+
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+</style>
+
+<body>
+  <!-- navbar -->
+
+  <nav class="Navbar mb-5">
+    <div class="container-fluid d-flex align-items-center">
+      <a href="#" class="navbar-brand">
+        <img class="logo" src="./assets/images/wlogo.png" alt="logo" />
+      </a>
+      <div class="navs w-100 d-flex  justify-content-center ">
+        <ul class="navbar-nav navmenu d-flex flex-row ">
+          <li class="nav-item mx-2 itemBefor">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+        </ul>
+      </div>
+      </form>
+    </div>
+  </nav>
+  <!-- navbar end -->
+  <div class="container-fluid">
+    <div class="container">
+      <!-- hero section -->
+      <div class="bgMain p-2 d-flex flex-column flex-md-row position-relative ">
+        <p class="vrText">Crafting your dream wedding</p>
+        <div class="images d-flex flex-column flex-md-row position-relative ">
+          <img class="img-fluid" src="./assets/images/hero.png" alt="" />
+          <p class="vrText2">Welcome</p>
+        </div>
+        <div class="text">
+          <div>
+            <p class="mainText mt-5 pt-2 ms-1">
+              Your Love <br />
+              Story, <br />
+              Our <br />
+              Celebration
+            </p>
+          </div>
+          <div>
+            <p class="smText ms-1">
+              Lorem ipsum dolor sit amet, consectetur ut labore et dolore
+              magna aliqua.
+            </p>
+            <p class="smText ms-1">
+              adipiscing elit, sed do eiusmod tempor incididunt
+            </p>
+            <p class="smText ms-1">Ut enim ad</p>
+            <p class="smText ms-1">minim veniam, quis nostrud</p>
+          </div>
+        </div>
+      </div>
+      <!-- hero ends -->
+      <!-- searching section -->
+      <div>
+        <img class="img-fluid mt-5 w-75 mx-auto d-block" src="./assets/images/line.png" alt="">
+        <div class="mt-2 mb-4">
+          <p class="text-center heading2 mt-5">Crafting Your perfect wedding, Hand in Hand</p>
+          <p class="my-2 paraSub2 text-center">Explore thousand of professionals with Wosom, where couples like you find
+            their wedding planning made a breeze.</p>
+
+          <!-- search -->
+          <div class="d-flex flex-column flex-md-row justify-content-center mt-3">
+            <!-- searchBar -->
+            <div class="search d-flex flex-column flex-md-row mt-2 p-2 align-item-center gap-3 gap-sm-1 gap-md-0">
+              <div class="ps-2 pe-1 leftSearch d-flex align-items-center flex-column flex-md-row gap-3 gap-sm-1 gap-md-0">
+                <span><img src="./assets/images/sicon.png" alt="" width="25px"></span>
+                <input class="form-control sInp" type="text" placeholder="Wedding Venus">
+              </div>
+              <div class="rightSearch d-flex flex-column flex-md-row align-items-center gap-3 gap-sm-1 gap-md-0">
+                <span><img src="./assets/images/licon.png" alt="" width="35px"></span>
+                <input class="form-control sInp me-md-5 " type="text" placeholder="in location (e.g. Cyprus)">
+
+                <div class="special-btn d-flex justify-content-center">
+                  <a href="#" class="text-decoration-none">
+                    <button onclick="createRipple(event)"
+                    class="btn getBtn d-flex align-items-center justify-content-center text-uppercase ripple-btn">
+                    <img src="./assets/images/Arrow.png" alt="">
+                  </button>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- searchBAr ends -->
+          </div>
+          <!-- end search -->
+        </div>
+        <img class="img-fluid mt-5 w-75 mx-auto d-block" src="./assets/images/line.png" alt="">
+
+        <div class="my-3">
+          <p class="text-center heading2 mt-5">WoSom's Tools for Simplifying Your Wedding</p>
+          <p class="my-2 paraSub2 text-center">WoSom's suite of tools simplifies your wedding planning journey</p>
+          <div class="row my-2 px-lg-5 d-flex justify-content-center">
+            <div class="col-md-1 d-none d-lg-block"></div>
+            <div class="col-md-4 col-lg-3 my-2">
+              <div class="card wosCard px-2 py-5">
+                <img class="d-block mx-auto" src="./assets/images/cimg1.png" alt="" width="50px">
+                <p class="my-2 chead">wedding vendors</p>
+                <p class="my-2 paraSub2">Discover Top Tier Wedding vendors are near you</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-3 my-2">
+              <div class="card wosCard px-2 py-5">
+                <img class="d-block mx-auto" src="./assets/images/cimg3.png" alt="" width="50px">
+                <p class="my-2 chead">Wedding webSITE</p>
+                <p class="my-2 paraSub2">Create Your Custom Wedding Website totally FREE</p>
+              </div>
+            </div>
+            <div class="col-md-4 col-lg-3 my-2">
+              <div class="card wosCard px-2 py-5">
+                <img class="d-block mx-auto" src="./assets/images/cimg2.png" alt="" width="50px">
+                <p class="my-2 chead">planning tools</p>
+                <p class="my-2 paraSub2">Streamline your Wedding Planning with Wosom</p>
+              </div>
+            </div>
+            <div class="col-md-1 d-none d-lg-block"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- searching ends -->
+
+      <!-- wedding plain section -->
+
+      <div class="my-2">
+        <img class="img-fluid mt-5 w-75 mx-auto d-block" src="./assets/images/line.png" alt="">
+        <p class="text-center heading2 mt-5">Savor the Journey of Wedding Planning</p>
+        <p class="my-2 paraSub2 text-center">Start organizing your wedding with Wosom at no expense</p>
+        <div class="row my-2">
+          <div class="col-md-3 my-2">
+            <a href="#"><div class="card pCard p-1">
+              <div>
+                <img class="img-fluid pImg" src="./assets/images/pcard1.png" alt="">
+              </div>
+              <p class="pcHead">Wedding Venues</p>
+              <p class="deText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut</p>
+            </div></a>
+          </div>
+          <div class="col-md-3 my-2">
+            <a href="#"><div class="card pCard p-1">
+              <div>
+                <img class="img-fluid pImg" src="./assets/images/pc2.png" alt="">
+              </div>
+              <p class="pcHead">Wedding Videography</p>
+              <p class="deText">lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut</p>
+            </div></a>
+          </div>
+          <div class="col-md-3 my-2">
+            <a href="#"><div class="card pCard p-1">
+              <div>
+                <img class="img-fluid pImg" src="./assets/images/pc3.png" alt="">
+              </div>
+              <p class="pcHead">Wedding Attire</p>
+              <p class="deText">lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut</p>
+            </div></a>
+          </div>
+          <div class="col-md-3 my-2">
+            <a href="#"><div class="card pCard p-1">
+              <div>
+                <img class="img-fluid pImg" src="./assets/images/pc4.png" alt="">
+              </div>
+              <p class="pcHead">Wedding Photoshoot</p>
+              <p class="deText">lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut</p>
+            </div></a>
+          </div>
+          <div class="col-md-3 my-2">
+            <a href="#"><div class="card pCard p-1">
+              <div>
+                <img class="img-fluid pImg" src="./assets/images/pc5.png" alt="">
+              </div>
+              <p class="pcHead">Wedding Cakes</p>
+              <p class="deText">lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut</p>
+            </div></a>
+          </div>
+          <div class="col-md-3 my-2">
+            <a href="#"><div class="card pCard p-1">
+              <div>
+                <img class="img-fluid pImg" src="./assets/images/pc5.png" alt="">
+              </div>
+              <p class="pcHead">Wedding Destinations</p>
+              <p class="deText">lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut</p>
+            </div></a>
+          </div>
+          <div class="col-md-3 my-2">
+            <a href="#"><div class="card pCard p-1">
+              <div>
+                <img class="img-fluid pImg" src="./assets/images/pc5.png" alt="">
+              </div>
+              <p class="pcHead">Wedding Vendors</p>
+              <p class="deText">lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut</p>
+            </div></a>
+          </div>
+          <div class="col-md-3 my-2">
+            <a href="#"><div class="card pCard p-1">
+              <div>
+                <img class="img-fluid pImg" src="./assets/images/pc5.png" alt="">
+              </div>
+              <p class="pcHead">Wosom Wedding Planner</p>
+              <p class="deText">lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut</p>
+            </div></a>
+          </div>
+          <div class="my-3 d-flex justify-content-center">
+            <div class="special-btn d-flex justify-content-center">
+              <a class="text-decoration-none" href="#">
+                <button onclick="createRipple(event)"
+                class="btn getBtn d-flex align-items-center justify-content-center text-uppercase ripple-btn">
+                View More
+                <img src="./assets/images/Arrow.png" alt="">
+              </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- wedding plan section ends -->
+
+      <!-- swiper section -->
+
+
+      <!--extra supporting swiper card -->
+      <!-- <div class="row ">
+      
+        <div class="col-md-3">
+          <div class="">
+            <div class="headerImg">
+              <img class="img-fluid" src="./assets/images/simg.png" alt="">
+            </div>
+            <div class="content">
+              <p class="heading2 mt-2">Combine Vacations & wedding in cyprus</p>
+              <p class="mt-2 smText text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad mi Lorem ipsum 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div> -->
+
+      <!-- extra supporting swiper card ends -->
+
+
+      <div class="position-relative ">
+        <div class="my-2">
+          <img class="img-fluid mt-5 w-75 mx-auto d-block" src="./assets/images/line.png" alt="">
+          <p class="text-center heading2 mt-5">Recommended Prime Picks for Your Luxury Wedding</p>
+          <p class="my-2 paraSub2 text-center">Here are the top- tier WOSOM ‘s articles for your perfect wedding</p>
+        </div>
+        <div class="swiper myswiper position-relative ">
+          <div class="swiper-wrapper px-lg-5 mx-md-5 ">
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="">
+                <div class="headerImg">
+                  <img class="img-fluid" src="./assets/images/simg.png" alt="" width="100%" height="50%">
+                </div>
+                <div class="content">
+                  <p class="heading2 mt-2">Combine Vacations & wedding in cyprus</p>
+                  <p class="mt-2 smText text-center">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad mi Lorem ipsum
+                  </p>
+                </div>
+              </div>
+            </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="">
+                  <div class="headerImg">
+                    <img class="img-fluid" src="./assets/images/simg.png" alt="">
+                  </div>
+                  <div class="content">
+                    <p class="heading2 mt-2">Combine Vacations & wedding in cyprus</p>
+                    <p class="mt-2 smText text-center">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                      et dolore magna aliqua. Ut enim ad mi Lorem ipsum
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="">
+                  <div class="headerImg">
+                    <img class="img-fluid" src="./assets/images/simg.png" alt="">
+                  </div>
+                  <div class="content">
+                    <p class="heading2 mt-2">Combine Vacations & wedding in cyprus</p>
+                    <p class="mt-2 smText text-center">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                      et dolore magna aliqua. Ut enim ad mi Lorem ipsum
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="">
+                  <div class="headerImg">
+                    <img class="img-fluid" src="./assets/images/simg.png" alt="">
+                  </div>
+                  <div class="content">
+                    <p class="heading2 mt-2">Combine Vacations & wedding in cyprus</p>
+                    <p class="mt-2 smText text-center">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                      et dolore magna aliqua. Ut enim ad mi Lorem ipsum
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="#">
+                <div class="">
+                  <div class="headerImg">
+                    <img class="img-fluid" src="./assets/images/simg.png" alt="">
+                  </div>
+                  <div class="content">
+                    <p class="heading2 mt-2">Combine Vacations & wedding in cyprus</p>
+                    <p class="mt-2 smText text-center">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                      et dolore magna aliqua. Ut enim ad mi Lorem ipsum
+                    </p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+        </div>
+        <div class="button-next">
+          <img src="./assets/images/arrowRight.png" alt="next button" width="15px">
+        </div>
+        <div class="button-prev">
+          <img src="./assets/images/arrowLeft.png" alt="previous button" width="15px">
+        </div>
+
+        <div class="mb-2 mt-5 d-flex justify-content-center">
+          <div class="special-btn d-flex justify-content-center">
+            <a class="text-decoration-none" href="#">
+              <button onclick="createRipple(event)"
+              class="btn getBtn d-flex align-items-center justify-content-center text-uppercase ripple-btn">
+              wosom blogs
+              <img class="img-fluid " src="./assets/images/Arrow.png" alt="">
+            </button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+    <!-- swiper section ends -->
+  </div>
+  </div>
+  <!--  new section-->
+  <div class="container-fluid">
+    <div class="container mt-2 mb-5 pb-5">
+      <img class="img-fluid mt-5 w-75 mx-auto d-block" src="./assets/images/line.png" alt="">
+      <p class="text-center heading2 mt-5">Discover the Insights from Wosom's Valued Clients!</p>
+      <p class="my-2 paraSub2 text-center mb-5">Discover the Insights from Wosom's Valued Clients!</p>
+    </div>
+    <div class="bgClients py-2 w-100 mt-5">
+      <div class="container mt-5 ">
+        <!-- supportin extra card -->
+        <!-- man box -->
+        <!-- <div class="mainBox d-flex  position-relative">
+        
+          <div class="leftSideBox d-flex mx-2">
+            <div class="text mx-1">
+              <div>
+                <p class="paraB">Tina & Alex</p>
+                <p class="paraB2">“From the first consultation to the last dance, WOSOM made our wedding day truly
+                  magical!”</p>
+              </div>
+            </div>
+            <div class="image mx-1">
+              <img src="./assets/images/b1.png" alt="testimonial image" class="boxImg img-fluid">
+            </div>
+          </div>
+        
+          <div class="rightSideBox d-flex mx-2">
+
+            <div class="image mx-1">
+              <img src="./assets/images/b1.png" alt="testimonial image" class="boxImg img-fluid">
+            </div>
+            <div class="text mx-1">
+              <div>
+                <p class="paraB">Tina & Alex</p>
+                <p class="paraB2">“From the first consultation to the last dance, WOSOM made our wedding day truly
+                  magical!”</p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+        <!-- supporting extra card ends -->
+
+
+
+        <!-- swiper -->
+        <div class="swiper newSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="mainBox d-flex flex-column flex-lg-row gap-5 gap-lg-0 position-relative">
+                <!-- left side -->
+                <div class="leftSideBox flex-column flex-sm-row d-flex mx-2">
+                  <div class="text mx-1">
+                    <div>
+                      <p class="paraB">Tina & Alex</p>
+                      <p class="paraB2">“From the first consultation to the last dance, WOSOM made our wedding day truly
+                        magical!”</p>
+                    </div>
+                  </div>
+                  <div class="image mx-1">
+                    <img src="./assets/images/b1.png" alt="testimonial image" class="boxImg img-fluid">
+                  </div>
+                </div>
+                <!-- right Side -->
+                <div class="rightSideBox flex-column flex-sm-row d-flex mx-2">
+
+                  <div class="image mx-1">
+                    <img src="./assets/images/b2.png" alt="testimonial image" class="boxImg img-fluid">
+                  </div>
+                  <div class="text mx-1">
+                    <div>
+                      <p class="paraB">Tina & Alex</p>
+                      <p class="paraB2">“From the first consultation to the last dance, WOSOM made our wedding day truly
+                        magical!”</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="mainBox d-flex flex-column flex-lg-row gap-5 gap-lg-0 position-relative">
+                <!-- left side -->
+                <div class="leftSideBox flex-column flex-sm-row d-flex mx-2">
+                  <div class="text mx-1">
+                    <div>
+                      <p class="paraB">Tina & Alex</p>
+                      <p class="paraB2">“From the first consultation to the last dance, WOSOM made our wedding day truly
+                        magical!”</p>
+                    </div>
+                  </div>
+                  <div class="image mx-1">
+                    <img src="./assets/images/b1.png" alt="testimonial image" class="boxImg img-fluid">
+                  </div>
+                </div>
+                <!-- right Side -->
+                <div class="rightSideBox flex-column flex-sm-row d-flex mx-2">
+
+                  <div class="image mx-1">
+                    <img src="./assets/images/b2.png" alt="testimonial image" class="boxImg img-fluid">
+                  </div>
+                  <div class="text mx-1">
+                    <div>
+                      <p class="paraB">Tina & Alex</p>
+                      <p class="paraB2">“From the first consultation to the last dance, WOSOM made our wedding day truly
+                        magical!”</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="mainBox d-flex flex-column flex-lg-row gap-5 gap-lg-0 position-relative">
+                <!-- left side -->
+                <div class="leftSideBox flex-column flex-sm-row d-flex mx-2">
+                  <div class="text mx-1">
+                    <div>
+                      <p class="paraB">Tina & Alex</p>
+                      <p class="paraB2">“From the first consultation to the last dance, WOSOM made our wedding day truly
+                        magical!”</p>
+                    </div>
+                  </div>
+                  <div class="image mx-1">
+                    <img src="./assets/images/b1.png" alt="testimonial image" class="boxImg img-fluid">
+                  </div>
+                </div>
+                <!-- right Side -->
+                <div class="rightSideBox flex-column flex-sm-row d-flex mx-2">
+
+                  <div class="image mx-1">
+                    <img src="./assets/images/b2.png" alt="testimonial image" class="boxImg img-fluid">
+                  </div>
+                  <div class="text mx-1">
+                    <div>
+                      <p class="paraB">Tina & Alex</p>
+                      <p class="paraB2">“From the first consultation to the last dance, WOSOM made our wedding day truly
+                        magical!”</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!--  Navigation -->
+          <div class="swiper-butto-next">
+             <img src="./assets/images/arrowLeft.png" width="15px" alt="">
+          </div>
+          <div class="swiper-butto-prev">
+            <img src="./assets/images/arrowRight.png" width="15px" alt="">
+          </div>
+        </div>
+        <!-- swiper -->
+      </div>
+    </div>
+  </div>
+  <!-- new section ends -->
+
+  <div class="w-75 m-auto">
+    <div class="container">
+      <img class="img-fluid mt-5 w-75 mx-auto d-block" src="./assets/images/line.png" alt="">
+      <p class="text-center heading2 mt-5">Design Your Dreamy Wedding Website with wosom</p>
+      <p class="my-2 paraSub2 text-center "> Your Unique Wedding Story Begins Here, Craft the Unforgettable Saga of Your
+        Love</p>
+      <div class="row my-2 align-items-end
+      ">
+        <div class="col-12 col-md-6 my-2 bgLeft">
+          <div class="d-flex">
+            <div>
+
+            </div>
+            <div class="mCard">
+              <div class="imgm">
+                <img src="./assets/images/dimg1.png" alt="" class="img-fluid">
+                <p class="my-2 heading2 text-align-start">CREAte your unique story with wosom wedding website tool</p>
+                <p class="mt-2 cText">Share your love story with a personal touch, all with a little help from us at
+                  WoSom. Craft a beautiful and unique wedding website</p>
+                <p class="rotatedText">Craft your dream wedding website</p>
+                <div class="special-btn d-flex justify-content-center">
+                 <a class="text-decoration-none" href="#"> <button onclick="createRipple(event)"
+                  class="btn getBtn d-flex align-items-center justify-content-center text-uppercase ripple-btn"  data-bs-target="#exampleModalToggle" data-bs-toggle="modal">
+                  get started
+                  <img src="./assets/images/Arrow.png" alt="">
+                </button></a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 my-2 bgRight">
+          <div class="imgsContainer ">
+            <div class="row designImgs">
+              <div class="col-12 col-md-6 mb-4">
+                <img src="./assets/images/cardImg1.png" alt="imgs">
+              </div>
+              <div class="col-12 col-md-6 mb-4">
+                <img src="./assets/images/cardImg2.png" alt="imgs">
+              </div>
+              <div class="col-12 col-md-6 mb-4">
+                <img src="./assets/images/cardImg3.png" alt="imgs">
+              </div>
+              <div class="col-12 col-md-6 mb-4">
+                <img src="./assets/images/cardImg4.png" alt="imgs">
+              </div>
+            </div>
+          </div>
+          <div class="special-btn d-flex justify-content-center">
+            <a class="text-decoration-none" href="#"><button onclick="createRipple(event)"
+              class="btn getBtn d-flex align-items-center justify-content-center text-uppercase ripple-btn">
+              More Design
+              <img src="./assets/images/Arrow.png" alt="">
+            </button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- modals  -->
+<!-- get started modal -->
+<div class="modal fade " id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content py-2 px-md-5 wosModal">
+      <div class="p-2 d-flex justify-content-end">
+      
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <p class="mh1 text-center">lets get started</p>
+         <div class="mt-4">
+           <p class="text-center my-2 mp1">Already a Wosom User?</p>
+           <p class="mt-4 mb-2 text-center mp2">Awesome!</p>
+           <a href="#" class="text-decoration-none">
+            <button onclick="createRipple(event)"
+           class="btn getBtn d-flex align-items-center justify-content-center text-uppercase ripple-btn mt-4 d-block mx-auto px-5" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">
+           
+           SIGN IN
+         </button>
+           </a>
+         <p class="text-center mb-2 mt-4 mp1">Not a Wosom User?</p>
+         <p class="text-center my-2 mp1">create Your Free Account at Wosom</p>
+         
+         <a href="#" class="text-decoration-none">
+          <button onclick="createRipple(event)"
+         class="btn getBtn d-flex align-items-center justify-content-center text-uppercase ripple-btn mt-4 d-block mx-auto px-5" data-bs-target="#exampleModalToggle3" data-bs-toggle="modal">
+         
+         SIGN UP
+       </button>
+         </a>
+         </div>
+      </div>
+      <div class="my-4 p-2">
+        <img class="d-block mx-auto img-fluid" src="./assets//images/Line4.png" alt="">
+        <p class="text-center my-3 mp1">keep Browsing wosom website Catalog <img src="./assets/images/arrv1.svg" alt="arrow image"></p>
+       
+      </div>
+    </div>
+  </div>
+</div>
+<!-- get sarted modal ends -->
+
+<!-- sign in modal -->
+<div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content py-2 px-md-5 wosModal">
+      <div class="p-2 d-flex justify-content-end">
+      
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body py-5">
+         <p class="mh1 text-center">Sign In</p>
+         <div class="mt-4">
+           <form class="signIn form">
+              <div class="inputs">
+                <input type="email" class="wosInp form-control mb-2" placeholder="Email Address">
+                <input type="password" class="wosInp form-control mb-2" placeholder="password">
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="check d-flex align-items-center">
+                    <input type="checkbox" class="form-check"  id="rcheck">
+                    <label class="mp3 ms-1" for="rcheck">Remember my account</label>
+                  </div>
+                  <a href="#" class="mp3 nav-link">Forgot Password</a>
+                </div>
+
+              </div>
+              <button onclick="createRipple(event)"
+              class="btn getBtn d-flex align-items-center justify-content-center text-uppercase ripple-btn mt-4 d-block mx-auto px-5">
+              
+              SIGN IN
+            </button>
+            <div class="mt-2">
+              <p class="d-flex justify-content-center align-items-center mp3 ">
+                NOT A MEMBER?<span class="mp4"><a href="#" class="nav-link">SIGN UP</a></span>
+              </p>
+            </div>
+           </form>
+         
+       
+         </div>
+      </div>
+      <div class="my-4 p-2">
+        <img class="d-block mx-auto img-fluid" src="./assets//images/Line4.png" alt="">
+       <p class="mp5   text-center my-5">sign in with</p>
+          <div class="d-flex justify-content-around   align-items-center w-100   brndImg" >
+            <a href="#"> <img src="./assets/images/ficon.png" alt=""></a>
+            <a href="#"> <img src="./assets/images/gicon.png" alt=""></a>
+            <a href="#"> <img src="./assets/images/gmicon.png" alt=""></a>
+          </div>
+       
+      </div>
+    </div>
+  </div>
+</div>
+<!-- sign in modal end -->
+
+<!-- sign up modal -->
+
+<div class="modal fade" id="exampleModalToggle3" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content py-2 px-md-5 wosModal">
+      <div class="p-2 d-flex justify-content-end">
+      
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body py-5">
+         <p class="mh1 text-center">Sign Up</p>
+         <div class="mt-4">
+           <form class="signIn form">
+              <div class="inputs">
+                <p class="ip1">YOUR NAME</p>
+               <div class="my-2 d-flex justify-content-between">
+                <input type="email" class="wosInp form-control mb-2 me-2" placeholder="Email Address">
+                <input type="password" class="wosInp form-control mb-2 ms-2" placeholder="password">
+               </div>
+               <p class="ip1">YOUR PARTNER'S NAME</p>
+               <div class="my-2 d-flex justify-content-between">
+                <input type="text" class="wosInp form-control mb-2 me-2" placeholder="First Name">
+                <input type="text" class="wosInp form-control mb-2 ms-2" placeholder="Last Name">
+               </div>
+               <div class="my-2">
+                <input type="text" class="wosInp form-control mb-2" placeholder="Email Address">
+               </div>
+               <div class="my-2">
+                <input type="text" class="wosInp form-control mb-2" placeholder="Password">
+               </div>
+                
+
+              </div>
+              <button onclick="createRipple(event)"
+              class="btn getBtn d-flex align-items-center justify-content-center text-uppercase ripple-btn mt-4 d-block mx-auto px-5">
+              
+              SIGN IN
+            </button>
+            <div class="mt-2">
+              <p class="d-flex justify-content-center align-items-center mp3 ">
+                ALREADY A MEMBER?<span class="mp4"><a href="#" class="nav-link">SIGN IN </a></span>
+              </p>
+            </div>
+           </form>
+         
+       
+         </div>
+      </div>
+      <div class="my-4 p-2">
+        <img class="d-block mx-auto img-fluid" src="./assets//images/Line4.png" alt="">
+       <p class="mp5   text-center my-5">sign Up with</p>
+          <div class="d-flex justify-content-around   align-items-center w-100   brndImg" >
+            <a href="#"> <img src="./assets/images/ficon.png" alt=""></a>
+            <a href="#"> <img src="./assets/images/gicon.png" alt=""></a>
+            <a href="#"> <img src="./assets/images/gmicon.png" alt=""></a>
+          </div>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- sign up modals end -->
+
+<!-- modals end -->
+  <!-- footer start -->
+  <div class="container-fluid footer ">
+    <div class="container ">
+      <div class="d-flex justify-content-between flex-wrap ">
+        <!-- first -->
+        <div class="sub mt-3 p-2 ">
+          <h4 class="fhead">NAVIGATION</h3>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">Sign up for Free</a>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">My Profile</a>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">Task List</a>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">Business Listing</a>
+        </div>
+        <!-- 2nd  -->
+        <div class="sub mt-3 p-2 ">
+          <h4 class="fhead">SUPPORT CENTER</h3>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">My Account</a>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">Professional</a>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">Account</a>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">Privacy & Terms</a>
+        </div>
+        <!-- 3rd -->
+        <div class="sub mt-3 p-2 ">
+          <h4 class="fhead">FOR BUSINESS</h3>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">For Listing</a>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">Step into The</a>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">Spotlight</a>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">Plan & Pricing</a>
+        </div>
+        <!-- 4th -->
+        <div class="sub mt-3 p-2 ">
+          <h4 class="fhead">ABOUT WOSOM</h3>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">The Team</a>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">Job Opportunities</a>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">Wedding day
+              advisor</a>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">Leadership with a
+              vision </a>
+        </div>
+        <!-- 5th -->
+        <div class="sub mt-3 p-2 me-md-3 me-lg-0 ">
+          <h4 class="fhead">TALK TO US</h3>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">supportwosom.com</a>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">+35799256256</a>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">Contact Us</a>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">Facebook</a>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">Linkedin</a>
+            <a href="#" class="text-decoration-none d-block text-dark  custom-tag">Twitter</a>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center w-100 horz-line">
+        <img class="px-5 my-4" src="./assets/images/Line 1.png" alt="" />
+      </div>
+      <div class="below-line d-flex justify-content-between  mt-4 flex-wrap mx-5 pb-5 align-items-center ">
+        <!-- logo here -->
+        <div class="b-sub flogo"><img src="/assets/images/wosom-logo-black.png.png" alt=""></div>
+        <!-- copy right -->
+        <div class="b-sub rights my-lg-0 my-3 ">© wosom . All Rights Reserved.</div>
+        <!-- icons here -->
+        <div class="b-sub ficons d-flex gap-3 align-items-center  ">
+          <div class="icondiv d-flex  justify-content-center align-items-center my-md-0 my-3   "><i
+              class="fa-brands fa-facebook-f fa-l"></i></div>
+          <div class="icondiv d-flex  justify-content-center align-items-center my-md-0 my-3   "><i
+              class="fa-brands fa-linkedin-in fa-l"></i></div>
+          <div class="icondiv d-flex  justify-content-center align-items-center my-md-0 my-3   "><i
+              class="fa-brands fa-twitter fa-l"></i></div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</div>
+<div class="d-flex w-100 flex-wrap">
+  <img class="footer-pic" src="./assets/images/footer-one.png" alt="" />
+  <img class="footer-pic" src="./assets/images/footer-two.png" alt="" />
+  <img class="footer-pic" src="./assets/images/footer-four.png" alt="" />
+  <img class="footer-pic" src="./assets/images/footer-five.png" alt="" />
+  <img class="footer-pic" src="./assets/images/footer-six.png" alt="" />
+  <img class="footer-pic" src="./assets/images/footer-seven.png" alt="" />
+  <img class="footer-pic" src="./assets/images/footer-eight.png" alt="" />
+  <img class="footer-pic" src="./assets/images/footer-nine.png" alt="" />
+  <img class="footer-pic" src="./assets/images/footer-ten.png" alt="" />
+</div>
+</div>
+  <!-- footer end -->
+
+  <!-- Ripple js  -->
+  <script>
+    function createRipple(event) {
+      const button = event.currentTarget;
+      const ripple = document.createElement("span");
+      const rect = button.getBoundingClientRect();
+      const size = Math.max(rect.width, rect.height);
+      const x = event.clientX - rect.left - size / 2;
+      const y = event.clientY - rect.top - size / 2;
+
+      ripple.style.width = ripple.style.height = `${size}px`;
+      ripple.style.left = `${x}px`;
+      ripple.style.top = `${y}px`;
+
+      ripple.classList.add("ripple");
+
+      button.appendChild(ripple);
+
+      setTimeout(() => {
+        ripple.remove();
+      }, 600);
+    }
+  </script>
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <!-- swiper js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    // let swiper = new Swiper('.myswiper', {
+    //   slidesPerView: 4,
+    //   spaceBetween: 10,
+    //   pagination: {
+    //     el: '.swiper-pagination',
+    //     clickable: true,
+    //   },
+    //   navigation: {
+    //     nextEl: '.button-next',
+    //     prevEl: '.button-prev',
+    //   },
+    // });
+
+    let swiper = new Swiper('.myswiper', {
+  slidesPerView: 4,
+  spaceBetween: 10,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.button-next',
+    prevEl: '.button-prev',
+  },
+  breakpoints: {
+    // when window width is <= 576px
+    320:{
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    576: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    // when window width is <= 768px
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    // when window width is <= 992px
+    992: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+    // when window width is <= 1200px
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+  },
+});
+
+    // swiper with effect creative
+    var swiper2 = new Swiper('.newSwiper', {
+      effect: 'cube',
+      cubeEffect: {
+        slideShadows: true,
+        shadow: false,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      },
+      grabCursor: true,
+      loop: true,
+     
+      slidesPerView: 1,
+      spaceBetween: 20,
+
+      navigation: {
+        nextEl: '.swiper-butto-next',
+        prevEl: '.swiper-butto-prev',
+      },
+    });
+  </script>
+
+
+</body>
+
+</html>
